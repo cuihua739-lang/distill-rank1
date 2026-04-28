@@ -1,0 +1,17 @@
+# Training Configuration for Chainless (Distilled) Rank1
+model_name_or_path: Qwen/Qwen2.5-1.5B
+output_dir: chainless_lora
+finetuning_type: lora
+lora_target: all
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 2
+learning_rate: 1.0e-4
+num_train_epochs: 1
+lr_scheduler_type: cosine
+fp16: true
+do_train: true
+
+# Data
+dataset: rank1_chainless
+dataset_dir: .
+template: default

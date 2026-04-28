@@ -1,0 +1,22 @@
+# Notebooks contain output data and model weights which are large
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+emissions.csv
+wandb/
+
+# Data files (large)
+chainless_data.jsonl
+rank1-training-data/
+rank1-run-files/
+LLaMA-Factory/
+dataset_info.json
+
+# Logs
+*.log
+nohup.out
+
+# OS files
+.DS_Store
+Thumbs.db
